@@ -4,7 +4,9 @@
 <mapper namespace="com.example.zoey.mapper.ZoeyMapper">
 
     <select id="findStoryById" parameterType="map" resultType="map">
-        SELECT schema_name FROM information_schema.schemata
+    SELECT *
+    FROM nerpdash_story
+    WHERE story_key = #{story_id}
     </select>
 
 </mapper>

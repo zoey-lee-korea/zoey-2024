@@ -1,4 +1,4 @@
-package com.example.zoey.mapper;
+package com.example.zoey;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
