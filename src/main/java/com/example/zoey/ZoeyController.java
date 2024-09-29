@@ -13,12 +13,12 @@ import java.util.Map;
 
 @Controller
 @RequestMapping(path = "/zoey")
-public class zoeyController {
+public class ZoeyController {
 
-    final zoeyService zoeyService;
+    final ZoeyService zoeyService;
 
     @Autowired
-    public zoeyController(zoeyService zoeyService) {
+    public ZoeyController(ZoeyService zoeyService) {
         this.zoeyService = zoeyService;
     }
 

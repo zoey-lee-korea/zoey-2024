@@ -14,7 +14,7 @@ public class ResponseUtils {
 	}
 
 	public static ResponseEntity<ResponseDto> createSuccessResponse(Object data, HttpStatus httpStatus) {
-		return createSuccessResponse(zoeyConstants.DEFAULT_SUCCESS_CODE, zoeyConstants.DEFAULT_SUCCESS_DESC, data, httpStatus);
+		return createSuccessResponse(ZoeyConstants.DEFAULT_SUCCESS_CODE, ZoeyConstants.DEFAULT_SUCCESS_DESC, data, httpStatus);
 	}
 
 	public static ResponseEntity<ResponseDto> createSuccessResponse(String statusCode, String description, Object data, HttpStatus httpStatus) {
@@ -25,7 +25,7 @@ public class ResponseUtils {
 		if (data == null)
 			data = new EmptyJsonResponse();
 
-		return ResponseDto.builder().successOrNot(zoeyConstants.SUCCESS_FLAG).statusCode(statusCode).data(data)
+		return ResponseDto.builder().successOrNot(ZoeyConstants.SUCCESS_FLAG).statusCode(statusCode).data(data)
 				.build();
 	}
 
