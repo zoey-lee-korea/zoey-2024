@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: zoey-2024
+    db:
+        datasource:
+            jdbcUrl: jdbc:log4jdbc:postgresql://localhost:5432/postgres?currentSchema=nerpdash
+            driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+            username: postgres
+            password: 1234
+            platform: postgres
