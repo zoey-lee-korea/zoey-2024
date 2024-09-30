@@ -1,5 +1,6 @@
 package com.example.zoey;
 
+import lombok.Getter;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -7,6 +8,29 @@ public class ZoeyConstants {
 	public static final String DEFAULT_SUCCESS_CODE = "SUCCESS";
 	public static final String DEFAULT_SUCCESS_DESC = "Success Response";
 	public static final String SUCCESS_FLAG = "Y";
+
+	// zoey
+	public enum UserStatus {
+		ACT, INACT
+	}
+
+	@Getter
+	public enum HttpRequestType {
+		NEW("POST"),
+		DEL("DELETE"),
+		MOD("PUT"),
+		READ("GET");
+
+		private final String method;
+
+		HttpRequestType(String method) {
+			this.method = method;
+		}
+		// lombok의 @Getter로 대체된 코드
+//		public String getMethod() {
+//			return this.method;
+//		}
+	}
 
 }
 
