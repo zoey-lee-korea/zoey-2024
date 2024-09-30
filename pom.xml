@@ -74,18 +74,25 @@
 		  <version>1.16</version>
 		</dependency>
 
-		<!-- Driver 1 -->
+		<!-- DB Driver 1 -->
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Driver 2 -->
+		<!-- DB Driver 2 -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+
+		<!-- .yml 파일 암호화 -->
+		<dependency>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot-starter</artifactId>
+			<version>3.0.0</version>
 		</dependency>
 
 	</dependencies>

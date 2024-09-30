@@ -2,12 +2,15 @@ spring:
     application:
         name: zoey-2024
     datasource:
-        jdbcUrl: jdbc:log4jdbc:postgresql://localhost:5432/postgres?currentSchema=public
+        jdbcUrl: ENC(hmRYeWg6bn+edjQj43YBRNcqTIC3ribO/tsygOVNjJnoDGpMu+D0A+vDKphwkSdGivEnibStmbfo1ikVbR5t4oI9kYkNP9E9qTTpmKy4GmY=)
         driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-        username: postgres
-        password:
+        username: ENC(RWOOjBHrOxZIhadrxrVlt4FnON4/GkNk)
+        password: ENC(yI9ehsRxakpx+C/R+0y6vA==)
         platform: postgres
 
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
 
 logging:
     level:
