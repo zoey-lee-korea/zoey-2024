@@ -1,5 +1,7 @@
-package com.example.zoey;
+package com.example.zoey.utils;
 
+import com.example.zoey.ResponseDto;
+import com.example.zoey.ZoeyConstants;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.experimental.UtilityClass;
 import org.springframework.http.HttpStatus;
